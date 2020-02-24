@@ -14,11 +14,11 @@ export class InterestService {
   calaulateinterest(years: number): number {
 
     for (var counter: number = 1; counter < years + 1; counter++) {
-      return this.Total = this.Amount * Math.pow((1 +
+      this.Total = this.Amount * Math.pow((1 +
       this.interestRate / this.annualCompound),
       (this.annualCompound * counter));
     }
-
+     return this.Total; 
   }
 
 
